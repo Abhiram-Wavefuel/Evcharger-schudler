@@ -1,0 +1,193 @@
+{
+  "name": "Scenario 2 \u2014 Bunched start",
+  "description": "Buses from both directions depart in a tight cluster (every 8 min) over the first 50 minutes, then space out. Creates heavy early contention.",
+  "physical_constants": {
+    "battery_capacity_km": 240.0,
+    "charging_duration_min": 25.0,
+    "bus_speed_kmh": 60.0
+  },
+  "weights": {
+    "individual": 1.0,
+    "operator": 1.0,
+    "overall": 1.0
+  },
+  "route": {
+    "segments": [
+      {
+        "from_node": "Bengaluru",
+        "to_node": "A",
+        "distance_km": 100.0
+      },
+      {
+        "from_node": "A",
+        "to_node": "B",
+        "distance_km": 120.0
+      },
+      {
+        "from_node": "B",
+        "to_node": "C",
+        "distance_km": 100.0
+      },
+      {
+        "from_node": "C",
+        "to_node": "D",
+        "distance_km": 120.0
+      },
+      {
+        "from_node": "D",
+        "to_node": "Kochi",
+        "distance_km": 100.0
+      }
+    ],
+    "endpoints": [
+      "Bengaluru",
+      "Kochi"
+    ],
+    "stations": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ]
+  },
+  "stations": [
+    {
+      "name": "A",
+      "num_chargers": 1
+    },
+    {
+      "name": "B",
+      "num_chargers": 1
+    },
+    {
+      "name": "C",
+      "num_chargers": 1
+    },
+    {
+      "name": "D",
+      "num_chargers": 1
+    }
+  ],
+  "buses": [
+    {
+      "id": "bus-BK-01",
+      "operator": "kpn",
+      "direction": "Bengaluru->Kochi",
+      "departure_time_str": "19:00"
+    },
+    {
+      "id": "bus-BK-02",
+      "operator": "freshbus",
+      "direction": "Bengaluru->Kochi",
+      "departure_time_str": "19:08"
+    },
+    {
+      "id": "bus-BK-03",
+      "operator": "flixbus",
+      "direction": "Bengaluru->Kochi",
+      "departure_time_str": "19:16"
+    },
+    {
+      "id": "bus-BK-04",
+      "operator": "kpn",
+      "direction": "Bengaluru->Kochi",
+      "departure_time_str": "19:24"
+    },
+    {
+      "id": "bus-BK-05",
+      "operator": "freshbus",
+      "direction": "Bengaluru->Kochi",
+      "departure_time_str": "19:32"
+    },
+    {
+      "id": "bus-BK-06",
+      "operator": "flixbus",
+      "direction": "Bengaluru->Kochi",
+      "departure_time_str": "19:40"
+    },
+    {
+      "id": "bus-BK-07",
+      "operator": "kpn",
+      "direction": "Bengaluru->Kochi",
+      "departure_time_str": "19:48"
+    },
+    {
+      "id": "bus-BK-08",
+      "operator": "freshbus",
+      "direction": "Bengaluru->Kochi",
+      "departure_time_str": "20:03"
+    },
+    {
+      "id": "bus-BK-09",
+      "operator": "flixbus",
+      "direction": "Bengaluru->Kochi",
+      "departure_time_str": "20:18"
+    },
+    {
+      "id": "bus-BK-10",
+      "operator": "kpn",
+      "direction": "Bengaluru->Kochi",
+      "departure_time_str": "20:33"
+    },
+    {
+      "id": "bus-KB-01",
+      "operator": "freshbus",
+      "direction": "Kochi->Bengaluru",
+      "departure_time_str": "19:00"
+    },
+    {
+      "id": "bus-KB-02",
+      "operator": "flixbus",
+      "direction": "Kochi->Bengaluru",
+      "departure_time_str": "19:08"
+    },
+    {
+      "id": "bus-KB-03",
+      "operator": "kpn",
+      "direction": "Kochi->Bengaluru",
+      "departure_time_str": "19:16"
+    },
+    {
+      "id": "bus-KB-04",
+      "operator": "freshbus",
+      "direction": "Kochi->Bengaluru",
+      "departure_time_str": "19:24"
+    },
+    {
+      "id": "bus-KB-05",
+      "operator": "flixbus",
+      "direction": "Kochi->Bengaluru",
+      "departure_time_str": "19:32"
+    },
+    {
+      "id": "bus-KB-06",
+      "operator": "kpn",
+      "direction": "Kochi->Bengaluru",
+      "departure_time_str": "19:40"
+    },
+    {
+      "id": "bus-KB-07",
+      "operator": "freshbus",
+      "direction": "Kochi->Bengaluru",
+      "departure_time_str": "19:48"
+    },
+    {
+      "id": "bus-KB-08",
+      "operator": "flixbus",
+      "direction": "Kochi->Bengaluru",
+      "departure_time_str": "20:03"
+    },
+    {
+      "id": "bus-KB-09",
+      "operator": "kpn",
+      "direction": "Kochi->Bengaluru",
+      "departure_time_str": "20:18"
+    },
+    {
+      "id": "bus-KB-10",
+      "operator": "freshbus",
+      "direction": "Kochi->Bengaluru",
+      "departure_time_str": "20:33"
+    }
+  ]
+}
